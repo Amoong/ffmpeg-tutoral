@@ -1,0 +1,76 @@
+<!-- https://youtu.be/pJJQZvS9VNI -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ffmpeg tutorial</title>
+    <link rel="icon" type="image/x-icon" size="16x16" href="./favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="coi-serviceworker.js"></script>
+    <script src="ffmpeg.min.js"></script>
+  </head>
+  <body>
+    <h1>ffmpeg.wasm tutorial</h1>
+
+    <div class="block">
+      <h2>Upload a sample video</h2>
+      <video id="sampleVideo" controls muted></video>
+      <input class="uploader" type="file" id="uploader" accept="video/*" />
+    </div>
+
+    <div id="videoConversion" class="block">
+      <h2>🛠️Video conversion</h2>
+      <button disabled>Start</button>
+      <div class="progress-bar-container">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+
+    <div id="videoCropping" class="block">
+      <h2>✂️ Video Cropping</h2>
+      <button disabled>Start</button>
+      <div class="progress-bar-container">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+
+    <div id="gettingThumbnail" class="block">
+      <h2>🖼️ Getting Thumbnail</h2>
+      <img hidden src="" alt="Thumbnail" />
+      <button disabled>Start</button>
+      <div class="progress-bar-container">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+
+    <div id="extractingAudio" class="block">
+      <h2>🔊 Extracting Audio</h2>
+      <button disabled>Start</button>
+      <div class="progress-bar-container">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+
+    <div id="makingGif" class="block">
+      <h2>💃 Making GIF</h2>
+      <button disabled>Start</button>
+      <div class="progress-bar-container">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+
+    <div id="watermark" class="block">
+      <h2>💦 Watermark</h2>
+      <input class="uploader" type="file" accept="image/*" />
+      <button disabled>Start</button>
+      <div class="progress-bar-container">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
